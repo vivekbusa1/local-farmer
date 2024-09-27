@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./market.css">
+</head>
+<body>
+    <header>
+        <h1>Local Farmer's Market Listings</h1>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search for markets...">
+            <select id="filter">
+                <option value="">Filter by Produce</option>
+                <option value="fruits">Fruits</option>
+                <option value="vegetables">Vegetables</option>
+                <option value="handmade">Handmade Goods</option>
+            </select>
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="market-list">
+            <h2>Markets</h2>
+            <div class="sorting-options">
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="distance">Distance</option>
+                    <option value="hours">Operating Hours</option>
+                </select>
+            </div>
+            <ul id="markets">
+                <li class="market-item">
+                    <h3>Downtown Farmer's Market</h3>
+                    <p><strong>Address:</strong>Rajkot</p>
+                    <p><strong>Hours:</strong> Sat 8am - 1pm</p>
+                    <p><strong>Produce:</strong> Fresh fruits, Vegetables, Handmade goods</p>
+                </li>
+                <li class="market-item">
+                    <h3>City Park Farmer's Market</h3>
+                    <p><strong>Address:</strong>Morbi</p>
+                    <p><strong>Hours:</strong> Sun 9am - 2pm</p>
+                    <p><strong>Produce:</strong>Vegetables, Fruits</p>
+                </li>
+                <li class="market-item">
+                    <h3>Eastside Organic Market</h3>
+                    <p><strong>Address:</strong>Rajkot</p>
+                    <p><strong>Hours:</strong> Fri 4pm - 8pm</p>
+                    <p><strong>Produce:</strong> Vegetables, Fruits</p>
+                </li>
+                <!-- Add more markets as needed -->
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
